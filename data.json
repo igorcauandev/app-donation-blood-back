@@ -1,0 +1,66 @@
+{
+    "pacientes": [
+        {
+            "id": 1,
+            "nome": "João Silva",
+            "email": "joao.silva@email.com",
+            "telefone": "(45) 99999-1111",
+            "tipoSanguineo": "O+",
+            "idade": 28,
+            "genero": "Masculino",
+            "peso": 72.5,
+            "altura": 1.78,
+            "dataNascimento": "1998-04-15",
+            "elegivelParaDoar": true,
+            "endereco": {
+                "rua": "Rua das Flores",
+                "numero": 123,
+                "bairro": "Centro",
+                "cidade": "Marechal Cândido Rondon",
+                "estado": "PR"
+            }
+        }
+    ],
+    "centros": [
+        {
+            "id": 1,
+            "nome": "Hemocentro Regional Oeste",
+            "endereco": "Av. Brasil, 500",
+            "cidade": "Cascavel",
+            "estado": "PR",
+            "telefone": "(45) 3333-4444",
+            "email": "hemocentro@saude.pr.gov.br"
+        }
+    ],
+    "doacoes": [
+        {
+            "id": 1,
+            "idPaciente": 1,
+            "idCentro": 1,
+            "dataDoacao": "2026-05-23",
+            "quantidade": 450.0
+        }
+    ],
+    "bolsas": [
+        {
+            "id": 1,
+            "idDoacao": 1,
+            "idPaciente": 1,
+            "idCentro": 1,
+            "tipoSanguineo": "O+",
+            "volume": 450.0,
+            "status": "ativo"
+        }
+    ],
+    "campanhas": [
+        {
+            "id": 1,
+            "titulo": "Doe Sangue, Salve Vidas",
+            "descricao": "Campanha de conscientização e coleta de sangue para o inverno.",
+            "idCentro": 1,
+            "dataInicio": "2026-06-01",
+            "dataFim": "2026-06-30",
+            "status": "ativa"
+        }
+    ]
+}
